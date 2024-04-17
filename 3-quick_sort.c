@@ -60,9 +60,9 @@ void quick_sort_copy(int *arr, size_t size, int low, int high)
 
 	if (low < high)
 	{
-		pivot = partition(array, low, high, size);
-		quick_sort_copy(array, size, low, pivot - 1);
-		quick_sort_copy(array, size, pivot + 1, high);
+		pivot = partition(arr, low, high, size);
+		quick_sort_copy(arr, size, low, pivot - 1);
+		quick_sort_copy(arr, size, pivot + 1, high);
 	}
 }
 
